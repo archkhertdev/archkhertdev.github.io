@@ -1,0 +1,65 @@
+
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    animation: fadeIn 2s ease-in;
+}
+
+.center-box, .info-box, .files-box {
+    width: 90%;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 20px #00ff00;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: pulse 4s infinite;
+}
+
+.clock {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+button, .access-button {
+    margin-top: 20px;
+    background-color: black;
+    border: 2px solid #00ff00;
+    padding: 10px 20px;
+    color: #00ff00;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+button:hover, .access-button:hover {
+    background-color: #003300;
+}
+
+.warning {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #ff0000;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 20px #00ff00; }
+    50% { box-shadow: 0 0 30px #00cc00; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
